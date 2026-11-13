@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Rodape from "@/components/Rodape";
 import Revelar from "@/components/Revelar";
 import Abertura from "@/components/Abertura";
+import Palco from "@/components/Palco";
 import { Petalas } from "@/components/Atmosfera";
 
 export const metadata = {
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
         <Rodape />
         <Revelar />
+        <Palco />
       </body>
     </html>
   );

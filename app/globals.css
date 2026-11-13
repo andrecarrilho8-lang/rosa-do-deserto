@@ -426,3 +426,88 @@ body.travado{overflow:hidden}
   line-height:1.5;color:var(--creme-forte)}
 .etapa-fala cite{display:block;margin-top:8px;font-family:var(--corpo);font-style:normal;
   font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--creme-fraco)}
+
+/* ==================== MÚSICAS: cenas conduzidas pelo scroll ==================== */
+.capa-musicas{border-bottom:0}
+
+/* moldura de vídeo que cresce conforme entra na tela */
+.quadro{
+  position:relative;border-radius:14px;overflow:hidden;
+  border:1px solid rgba(232,205,178,.16);background:#000;
+  transform:scale(calc(.9 + .1 * var(--p,1)));
+  opacity:calc(.35 + .65 * var(--p,1));
+  box-shadow:0 40px 120px -40px rgba(0,0,0,.95),
+             0 0 calc(var(--p,0) * 120px) calc(var(--p,0) * -40px) rgba(189,32,40,.5);
+  will-change:transform,opacity}
+.quadro::after{
+  content:"";position:absolute;inset:0;pointer-events:none;border-radius:14px;
+  box-shadow:inset 0 0 90px rgba(0,0,0,.6);
+  opacity:calc(1 - var(--p,1))}
+
+/* faixa em destaque */
+.destaque{position:relative;padding:40px 0 120px;overflow:hidden}
+.destaque-palco{position:relative;padding:60px 0 40px}
+.destaque-n{
+  position:absolute;left:50%;top:0;transform:translate(-50%,calc(-18% + (1 - var(--p,1)) * 60px));
+  font-family:var(--display);font-weight:200;font-size:clamp(9rem,26vw,22rem);
+  line-height:.8;letter-spacing:-.05em;color:transparent;
+  -webkit-text-stroke:1px rgba(232,205,178,.14);
+  opacity:calc(.25 + .75 * var(--p,1));pointer-events:none;z-index:0;white-space:nowrap}
+.destaque-palco .env{position:relative;z-index:2}
+.destaque-palco .quadro{max-width:960px;margin:0 auto}
+
+.destaque-texto{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;
+  margin-top:64px;align-items:start}
+.destaque-titulo{font-size:clamp(2.6rem,6vw,4.4rem);line-height:1;letter-spacing:-.03em}
+.destaque-coluna .trecho{margin-top:28px}
+.trecho cite{display:block;margin-top:12px;font-family:var(--corpo);font-style:normal;
+  font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--creme-fraco)}
+@media(max-width:900px){
+  .destaque-texto{grid-template-columns:1fr;gap:28px;margin-top:44px}
+  .destaque{padding-bottom:80px}
+}
+
+/* fita de nomes */
+.marquise{overflow:hidden;border-top:var(--borda);border-bottom:var(--borda);
+  padding:26px 0;background:rgba(42,5,11,.3)}
+.marquise-fita{display:flex;width:max-content;animation:correFita 46s linear infinite}
+.marquise-fita span{display:flex;align-items:center}
+.marquise-fita em{font-family:var(--display);font-style:italic;font-weight:200;
+  font-size:clamp(1.5rem,3.4vw,2.4rem);color:rgba(232,205,178,.4);
+  padding:0 30px;white-space:nowrap;position:relative}
+.marquise-fita em::after{content:"";position:absolute;right:-4px;top:50%;
+  width:5px;height:5px;border-radius:50%;background:var(--vermelho);opacity:.55}
+@keyframes correFita{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquise-fita{animation:none}}
+
+/* demais faixas */
+.faixas-sec{padding-top:110px}
+.faixa-cena{position:relative;display:grid;grid-template-columns:1.25fr .75fr;
+  gap:56px;align-items:center;margin-bottom:130px}
+.faixa-cena.invertida{grid-template-columns:.75fr 1.25fr}
+.faixa-cena.invertida .faixa-video{order:2}
+.faixa-cena.invertida .faixa-info{order:1}
+.faixa-n{position:absolute;right:0;top:-54px;font-family:var(--display);font-weight:200;
+  font-size:clamp(4rem,10vw,8rem);line-height:.8;color:transparent;
+  -webkit-text-stroke:1px rgba(232,205,178,.13);
+  transform:translateY(calc((1 - var(--p,1)) * 40px));
+  opacity:calc(.3 + .7 * var(--p,1));pointer-events:none}
+.faixa-cena.invertida .faixa-n{right:auto;left:0}
+.faixa-info{transform:translateY(calc((1 - var(--p,1)) * 28px));
+  opacity:calc(.25 + .75 * var(--p,1))}
+.faixa-info h2{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.08;margin-bottom:12px}
+.faixa-resumo{font-size:17px;color:var(--creme-fraco);margin-bottom:16px;line-height:1.6}
+@media(max-width:900px){
+  .faixa-cena,.faixa-cena.invertida{grid-template-columns:1fr;gap:26px;margin-bottom:84px}
+  .faixa-cena.invertida .faixa-video{order:1}
+  .faixa-cena.invertida .faixa-info{order:2}
+  .faixa-n{top:-38px}
+  .faixas-sec{padding-top:72px}
+}
+.ep-sec{border-top:var(--borda)}
+
+.home-palco{padding:46px 0 10px}
+.home-palco .quadro{max-width:900px;margin:0 auto}
+.musicas-home-texto{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;
+  margin-top:50px;align-items:start}
+@media(max-width:900px){.musicas-home-texto{grid-template-columns:1fr;gap:30px;margin-top:36px}}

@@ -171,33 +171,11 @@ export default function Home() {
           <h2 className="titulo rev d1" style={{ maxWidth: "20ch" }}>
             <em>Saudade</em>, a primeira canção do projeto
           </h2>
-          <div className="musicas-home-grade">
-            <div>
-              <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Foi escrita de uma só vez, na noite em que aquela amiga contou
-                das três perdas. Juninho conta que, ao orar, lembrou de um
-                episódio da própria família: os médicos indicaram o aborto para
-                salvar a vida da mãe dele, e o pai pediu que tentassem salvar os
-                dois.
-              </p>
-              <p className="fala rev d3" style={{ marginTop: 28 }}>
-                &ldquo;Qual é a sua diferença para as crianças dela?&rdquo;
-              </p>
-              <p className="fala-quem rev d3">
-                A pergunta que ele diz ter ouvido naquele dia
-              </p>
-              <p className="texto rev d3" style={{ marginTop: 28 }}>
-                A melodia foi feita no mesmo dia com um parceiro de Recife, que
-                trabalha com ele por telefone. A canção abriu o EP e abre também
-                as apresentações.
-              </p>
-              <div className="botoes rev d4" style={{ marginTop: 30 }}>
-                <Link className="btn btn-cheio" href="/musicas">
-                  Todas as músicas
-                </Link>
-              </div>
-            </div>
-            <div className="rev d2">
+        </div>
+
+        <div className="home-palco" data-cena>
+          <div className="env">
+            <div className="quadro">
               <div className="player">
                 <iframe
                   src="https://www.youtube-nocookie.com/embed/bVfFE7b9ybc?rel=0"
@@ -206,6 +184,37 @@ export default function Home() {
                   allowFullScreen
                   loading="lazy"
                 />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="env">
+          <div className="musicas-home-texto">
+            <div>
+              <p className="texto rev">
+                Foi escrita de uma só vez, na noite em que uma amiga contou das
+                três perdas. Ao orar, Juninho lembrou de um episódio da própria
+                família: os médicos indicaram o aborto para salvar a vida da mãe
+                dele, e o pai pediu que tentassem salvar os dois.
+              </p>
+              <p className="texto rev d1">
+                A melodia foi feita no mesmo dia com um parceiro de Recife, que
+                trabalha com ele por telefone. A canção abriu o EP e abre também
+                as apresentações.
+              </p>
+            </div>
+            <div>
+              <p className="fala rev d2">
+                &ldquo;Qual é a sua diferença para as crianças dela?&rdquo;
+              </p>
+              <p className="fala-quem rev d2">
+                A pergunta que ele diz ter ouvido naquele dia
+              </p>
+              <div className="botoes rev d3" style={{ marginTop: 30 }}>
+                <Link className="btn btn-cheio" href="/musicas">
+                  Todas as músicas
+                </Link>
               </div>
             </div>
           </div>
