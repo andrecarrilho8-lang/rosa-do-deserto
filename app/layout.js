@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Abertura />
+        <div className="vinheta" aria-hidden="true" />
         <Petalas />
         <Nav />
         <main>{children}</main>
