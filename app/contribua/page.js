@@ -84,7 +84,8 @@ export default function Contribua() {
                 <h4>Empresas e patrocínio</h4>
                 <p>
                   Quem quiser apoiar como patrocinador pode ter a marca no site e
-                  no material do projeto. Fale pelo contato que a gente combina.
+                  no material do projeto. Me chame pelo contato que a gente
+                  combina.
                 </p>
               </div>
             </div>
@@ -95,7 +96,7 @@ export default function Contribua() {
             <p>
               Gravação e mixagem das músicas que ainda não saíram, divulgação na
               internet para a obra chegar em quem precisa ouvir, e o transporte
-              adaptado que permite ele sair de casa para cantar.
+              adaptado que me permite sair de casa para cantar.
             </p>
           </div>
         </div>

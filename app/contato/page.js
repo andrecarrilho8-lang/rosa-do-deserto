@@ -8,7 +8,7 @@ const canais = [
   {
     titulo: "Convites e apresentações",
     texto:
-      "Para chamar o Juninho na sua paróquia, retiro ou encontro. Conte onde é, que dia e quantas pessoas devem ir.",
+      "Para me chamar na sua paróquia, retiro ou encontro. Conte onde é, que dia e quantas pessoas devem ir.",
   },
   {
     titulo: "Imprensa e paróquias",
@@ -34,7 +34,7 @@ export default function Contato() {
             Fale com <em>o projeto</em>.
           </h1>
           <p className="texto rev d2">
-            O WhatsApp é o caminho mais rápido, porque ele responde pelo celular.
+            O WhatsApp é o caminho mais rápido, porque eu respondo pelo celular.
           </p>
         </div>
       </section>
@@ -47,8 +47,8 @@ export default function Contato() {
                 WhatsApp
               </h2>
               <p className="texto rev d1" style={{ marginTop: 20 }}>
-                Mande mensagem contando o que você precisa. Se for convite, já
-                adiante a cidade e a data.
+                Me mande mensagem contando o que você precisa. Se for convite,
+                já adiante a cidade e a data.
               </p>
               <div className="pix-caixa vazia rev d2" style={{ marginTop: 26 }}>
                 <span className="pix-rotulo">Número</span>

@@ -39,36 +39,36 @@ export default function Dvd() {
                 Por que casamento?
               </h2>
               <p className="texto rev d1" style={{ marginTop: 22 }}>
-                No aniversário dele, um amigo encheu a cabeça dele com a ideia de
-                gravar as músicas junto com os testemunhos. Ele achou impossível,
-                porque não tinha dinheiro para nada. Foi orar justamente para
-                convencer Deus a tirar aquilo da cabeça dele.
+                No meu aniversário, um amigo encheu a minha cabeça com a ideia de
+                gravar as músicas junto com os testemunhos. Eu achei impossível,
+                porque não tinha dinheiro para nada. Fui orar justamente para
+                convencer Deus a tirar aquilo da minha cabeça.
               </p>
               <p className="fala rev d2" style={{ marginTop: 30 }}>
                 &ldquo;Eu quero que você faça uma festa de casamento.&rdquo;
               </p>
               <p className="texto rev d2" style={{ marginTop: 30 }}>
-                Naquela mesma noite caiu por acaso numa pregação sobre as bodas
+                Naquela mesma noite caí por acaso numa pregação sobre as bodas
                 de Caná, a festa onde Jesus transformou água em vinho. O padre
-                falou da vida como a noiva que espera o noivo. Ele entendeu que
-                não ia escapar.
+                falou da vida como a noiva que espera o noivo. Entendi que não ia
+                escapar.
               </p>
 
               <h3 className="sub rev">Os cinquenta copos</h3>
               <p className="texto rev d1">
-                Pediu patrocínio para quase quinhentas pessoas, oferecendo
+                Pedi patrocínio para quase quinhentas pessoas, oferecendo
                 divulgar a marca de quem ajudasse. Uma mulher respondeu que
                 dinheiro não dava, mas que podia mandar copos. Chegaram cinquenta
-                copos simples, com a logo do DVD, que ele não conseguiria vender
+                copos simples, com a logo do DVD, que eu não conseguiria vender
                 nem por dois reais.
               </p>
               <p className="texto rev d1">
-                Ficaram meses parados em cima da mesa da sala. Toda vez que
-                passava perto, pensava em jogar fora. Até que pediu um sinal
+                Ficaram meses parados em cima da mesa da sala. Toda vez que eu
+                passava perto, pensava em jogar fora. Até que pedi um sinal
                 definitivo e, no dia seguinte, o primeiro vídeo que apareceu no
-                celular explicava que, entre os israelitas, era o copo que selava
-                a aliança do casamento. Desconfiou que fosse invenção. Foi
-                assistir a um filme sobre Maria e viu a cena: o pai dela passa o
+                meu celular explicava que, entre os israelitas, era o copo que
+                selava a aliança do casamento. Desconfiei que fosse invenção. Fui
+                assistir a um filme sobre Maria e vi a cena: o pai dela passa o
                 vinho num copo para José, e José para Maria, no lugar das
                 alianças.
               </p>
@@ -76,21 +76,21 @@ export default function Dvd() {
               <h3 className="sub rev">A gravação</h3>
               <p className="texto rev d1">
                 Um orçamento de vinte mil reais virou quatro mil, para seis
-                músicas em áudio e vídeo. Ele fez uma rifa de cinquenta reais e
-                vendeu metade. Na semana da gravação ainda tentou desmarcar.
+                músicas em áudio e vídeo. Fiz uma rifa de cinquenta reais e vendi
+                metade. Na semana da gravação eu ainda tentei desmarcar.
               </p>
               <p className="texto rev d1">
-                Chegou no estúdio e encontrou oito degraus na entrada. Quatro
-                homens o carregaram na cadeira de rodas até lá em cima. Trinta
-                pessoas apareceram para assistir, e ele diz que nenhuma saiu sem
-                chorar. Ele também chorava enquanto cantava, segurando para não
-                aparecer, porque cada música traz a história de volta.
+                Cheguei no estúdio e encontrei oito degraus na entrada. Quatro
+                homens me carregaram na cadeira de rodas até lá em cima. Trinta
+                pessoas apareceram para assistir, e nenhuma saiu sem chorar. Eu
+                também chorava enquanto cantava, segurando para não aparecer,
+                porque cada música traz a história de volta.
               </p>
               <p className="fala rev d2" style={{ marginTop: 30 }}>
                 &ldquo;Você não depende de você, você depende de mim.&rdquo;
               </p>
               <p className="fala-quem rev d2">
-                O que ele ouviu no pé da escada
+                O que eu ouvi no pé da escada
               </p>
 
               <div className="botoes rev d3" style={{ marginTop: 40 }}>

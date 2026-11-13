@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "A história | Projeto Rosa do Deserto",
+  title: "Minha história | Projeto Rosa do Deserto",
   description:
     "Como uma saudade, um sonho e uma semente de rosa viraram seiscentas e três músicas.",
 };
@@ -9,51 +9,51 @@ export const metadata = {
 const capitulos = [
   {
     n: "I",
-    titulo: "A mãe",
+    titulo: "Minha mãe",
     texto:
-      "Em setembro de 2021 a mãe dele morreu de uma semana para outra. Ele tinha cuidado dela no último ano, lembrando dos remédios, segurando a rotina. Desde novembro daquele ano mora sozinho.",
+      "Ela morreu em setembro de 2021, de uma semana para outra. No último ano eu era quem cuidava dela, lembrava dos remédios, segurava a rotina. Desde novembro daquele ano eu moro sozinho.",
   },
   {
     n: "II",
     titulo: "A promessa",
     texto:
-      "Um ano depois, numa adoração de madrugada, ele perguntou o que ia fazer da vida. Ouviu que Deus traria alguém que ele já conhecia e de quem jamais suspeitaria. Achou que estava viajando e foi dormir.",
+      "Um ano depois, numa adoração de madrugada, perguntei o que eu ia fazer da minha vida. Ouvi que Deus traria alguém que eu já conhecia e de quem eu jamais desconfiaria. Achei que estava viajando e fui dormir.",
   },
   {
     n: "III",
     titulo: "O sonho da rosa",
     texto:
-      "Dois dias depois sonhou com a mãe num canteiro de rosas. Ela colheu uma flor e entregou a Nossa Senhora, que veio correndo e pôs a rosa na mão dele. Acordou com aquela rosa na cabeça, uma rosa que nunca tinha visto.",
+      "Dois dias depois sonhei com a minha mãe num canteiro de rosas. Ela colheu uma flor, entregou a Nossa Senhora, e Nossa Senhora veio correndo e pôs a rosa na minha mão. Acordei com aquela flor na cabeça, uma flor que eu nunca tinha visto.",
   },
   {
     n: "IV",
     titulo: "O reencontro",
     texto:
-      "Uma semana depois reencontrou no Instagram uma amiga de vinte anos atrás, ex-namorada de um amigo próximo. Ela estava morando fora, recém-separada, depois de perder três filhos antes de eles nascerem.",
+      "Uma semana depois reencontrei no Instagram uma amiga de vinte anos atrás, ex-namorada de um amigo meu. Ela estava morando fora, recém-separada, depois de perder três filhos antes de eles nascerem.",
   },
   {
     n: "V",
     titulo: "A pergunta no chuveiro",
     texto:
-      "Ele não soube o que dizer. Pediu licença, foi tomar banho e começou a orar. E veio a pergunta que o derrubou, porque os médicos tinham mandado abortá-lo para salvar a mãe, e o pai pediu para tentarem salvar os dois.",
+      "Eu não soube o que dizer para ela. Pedi licença, fui tomar banho e comecei a orar. Foi ali que veio a pergunta que me derrubou, porque os médicos tinham mandado abortar para salvar a vida da minha mãe, e meu pai pediu para tentarem salvar os dois.",
   },
   {
     n: "VI",
     titulo: "Saudade",
     texto:
-      "Saiu do chuveiro e escreveu a letra inteira de uma vez. Chamou o amigo que faz as melodias. No fim da primeira vez que cantaram, os dois estavam chorando, e a diarista também. Ali ele prometeu a ela vinte músicas.",
+      "Saí do chuveiro e escrevi a letra inteira de uma vez. Chamei o amigo que faz as melodias comigo. Quando terminamos de cantar pela primeira vez, nós dois estávamos chorando, e a diarista também. Ali eu prometi vinte músicas para ela.",
   },
   {
     n: "VII",
     titulo: "A semente",
     texto:
-      "Quis mandar sementes de rosa para ela, porque flor cortada não aguentaria a viagem. Procurou na internet e o quarto resultado era semente de rosa do deserto. Olhou a foto e era igual à rosa do sonho.",
+      "Quis mandar sementes de rosa, porque flor cortada não aguentaria a viagem até lá. Procurei na internet e o quarto resultado era semente de rosa do deserto. Abri a foto e era igualzinha à flor do sonho.",
   },
   {
     n: "VIII",
     titulo: "O caminho da água",
     texto:
-      "Depois foi pesquisar o que a planta faz. A rosa do deserto brota na areia e mostra onde tem água. E no deserto, água é vida. Foi aí que ele entendeu o nome e parou de discutir.",
+      "Depois fui pesquisar o que a planta faz. A rosa do deserto nasce na areia e mostra onde tem água. E no deserto, água é vida. Foi aí que eu entendi o nome e parei de discutir.",
   },
 ];
 
@@ -64,14 +64,14 @@ export default function Historia() {
         <img className="fundo" src="/img/pb.webp" alt="" />
         <div className="veu" />
         <div className="env">
-          <p className="rotulo rev">A história</p>
+          <p className="rotulo rev">Minha história</p>
           <h1 className="rev d1">
             Começou com uma <em>saudade</em>.
           </h1>
           <p className="texto rev d2">
-            Ele não planejou nada disso. Diz que antes da Rosa do Deserto tinha
-            visto rosa na vida umas três vezes, nunca deu uma flor para ninguém
-            e nunca ligou para flor nenhuma.
+            Eu não planejei nada disso. Antes da Rosa do Deserto eu devia ter
+            visto rosa na vida umas três vezes, nunca tinha dado uma flor para
+            ninguém e não ligava para flor nenhuma.
           </p>
         </div>
       </section>
@@ -99,19 +99,22 @@ export default function Historia() {
             Quem é a <em>Rosa do Deserto</em>?
           </h2>
           <p className="texto rev d2">
-            Todo mundo pergunta. Ele nunca vai dizer, e diz que não faria
-            diferença saber, porque a história nunca foi sobre quem ela é.
+            Todo mundo me pergunta. Eu não vou dizer, e saber não mudaria nada,
+            porque a história nunca foi sobre quem ela é.
           </p>
           <p className="fala rev d3" style={{ marginTop: 32 }}>
             &ldquo;Foi só um jeito de Deus me mostrar o conceito.&rdquo;
           </p>
           <p className="texto rev d4" style={{ marginTop: 32 }}>
-            Ela ouve todas as músicas antes de qualquer pessoa. É o único
-            público garantido que ele tem. Segundo ele, quem tenta cuidar de
-            todo mundo acaba não cuidando de ninguém, e quem cuida de uma rosa
-            só descobre que o passarinho leva a semente para longe.
+            Ela ouve todas as músicas antes de qualquer pessoa. Eu acho que quem
+            tenta cuidar de todo mundo acaba não cuidando de ninguém, e que quem
+            cuida de uma rosa só descobre depois que o passarinho leva a semente
+            para longe.
           </p>
-          <div className="botoes rev d4" style={{ marginTop: 36, justifyContent: "center" }}>
+          <div
+            className="botoes rev d4"
+            style={{ marginTop: 36, justifyContent: "center" }}
+          >
             <Link className="btn btn-cheio" href="/musicas">
               Ouvir as músicas
             </Link>

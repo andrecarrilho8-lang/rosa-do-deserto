@@ -19,7 +19,7 @@ export default function Blog() {
           </h1>
           <p className="texto rev d2">
             Lançamento de música, bastidor de gravação, apresentação marcada.
-            O que for novidade aparece aqui primeiro.
+            O que for novidade eu conto aqui primeiro.
           </p>
         </div>
       </section>

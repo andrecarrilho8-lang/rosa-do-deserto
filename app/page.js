@@ -18,35 +18,31 @@ export default function Home() {
         <div className="env hero-dentro">
           <div className="hero-conteudo">
             <img className="selo rev" src="/img/rosa-traco.svg" alt="" />
-            <p className="rotulo rev">Projeto Rosa do Deserto</p>
+            <p className="rotulo rev">
+              Juninho Bergamin · Cantor e compositor católico · Londrina, PR
+            </p>
             <h1 className="rev d1">
-              Antes de cada canção,
+              Prometi vinte músicas para uma amiga.
               <br />
-              <em>o testemunho de onde ela veio.</em>
+              <em>Já são seiscentas e três.</em>
             </h1>
             <p className="texto rev d2 hero-lead">
-              O Projeto Rosa do Deserto é o trabalho de Juninho Bergamin, cantor
-              e compositor católico de Londrina. Em dois anos e meio ele compôs
-              seiscentas e três músicas, quase todas de madrugada, dentro de um
-              apartamento de trinta metros quadrados de onde quase nunca
-              consegue sair por causa de uma limitação na perna.
-            </p>
-            <p className="texto rev d2 hero-lead">
-              Ele canta e, entre uma música e outra, conta o que aconteceu com
-              ele para aquela letra existir. É assim no palco e é assim no DVD
-              que acabou de gravar.
+              Componho quase sempre de madrugada, dentro de casa, porque uma
+              limitação na perna me impede de sair sem carro adaptado. Quando
+              canto, conto antes o que aconteceu comigo para aquela letra
+              existir. É assim no palco e é assim no DVD que gravei.
             </p>
 
             <div className="botoes rev d3">
-              <a className="btn btn-cheio" href="#musicas">
+              <Link className="btn btn-cheio" href="/agenda">
+                Quero o Juninho no meu encontro
+              </Link>
+              <a className="btn btn-vazio" href="#musicas">
                 <svg viewBox="0 0 24 24">
                   <path fill="currentColor" d="M8 5v14l11-7z" />
                 </svg>
                 Ouvir Saudade
               </a>
-              <Link className="btn btn-vazio" href="/historia">
-                Por que Rosa do Deserto
-              </Link>
             </div>
 
             <ul className="ficha rev d4">
@@ -84,9 +80,8 @@ export default function Home() {
             ))}
           </div>
           <p className="nov-ponte rev d3">
-            As três novidades vêm do mesmo lugar: uma amiga que perdeu três
-            filhos antes de eles nascerem, e uma promessa de vinte músicas que
-            ele fez para ela.
+            As três coisas vêm da mesma história: a amiga para quem eu prometi
+            as vinte músicas.
           </p>
         </div>
       </section>
@@ -96,28 +91,29 @@ export default function Home() {
         <div className="env">
           <div className="historia-grade">
             <div>
-              <p className="rotulo rev">A história</p>
-              <h2 className="titulo rev d1" style={{ maxWidth: "16ch" }}>
+              <p className="rotulo rev">Quem eu sou</p>
+              <h2 className="titulo rev d1" style={{ maxWidth: "17ch" }}>
                 O nome veio de <em>um sonho</em>.
               </h2>
               <p className="texto rev d2" style={{ marginTop: 22 }}>
-                A mãe dele morreu em setembro de 2021, de uma semana para outra.
-                Um ano depois ele sonhou com ela num canteiro de rosas,
-                entregando uma flor que ele nunca tinha visto. Na semana
-                seguinte reencontrou uma amiga de vinte anos atrás, morando
-                fora, recém-separada, depois de perder três filhos antes de eles
+                Minha mãe morreu em setembro de 2021, de uma semana para outra.
+                Um ano depois sonhei com ela num canteiro de rosas, entregando
+                uma flor que eu nunca tinha visto. Na semana seguinte
+                reencontrei uma amiga de vinte anos atrás, morando fora,
+                recém-separada, depois de perder três filhos antes de eles
                 nascerem.
               </p>
               <p className="texto rev d2">
-                Ele quis mandar sementes de rosa para ela, porque flor cortada
-                não aguentaria a viagem. Procurou na internet e o quarto
-                resultado era semente de rosa do deserto, idêntica à flor do
-                sonho. Depois foi pesquisar o que a planta faz: ela brota na
-                areia e mostra onde tem água.
+                Quis mandar sementes de rosa para ela, porque flor cortada não
+                aguentaria a viagem. Procurei na internet e o quarto resultado
+                era semente de rosa do deserto, igualzinha à flor do sonho.
+                Depois fui pesquisar o que a planta faz: ela nasce na areia e
+                mostra onde tem água.
               </p>
               <p className="texto rev d3">
-                Ele prometeu vinte músicas para aquela amiga. Já são seiscentas
-                e três, e ela continua ouvindo cada uma antes de todo mundo.
+                Prometi vinte músicas para aquela amiga. Hoje são seiscentas e
+                três, e ela continua ouvindo cada uma antes de todo mundo. Quem
+                ela é eu não digo.
               </p>
               <div className="botoes rev d3" style={{ marginTop: 30 }}>
                 <Link className="btn btn-vazio" href="/historia">
@@ -142,24 +138,25 @@ export default function Home() {
         <div className="agenda-veu" />
         <div className="env">
           <div className="agenda-home-conteudo">
-            <p className="rotulo rev">Agenda e convites</p>
-            <h2 className="titulo rev d1" style={{ maxWidth: "15ch" }}>
-              Ele vai. <em>Só precisa chegar.</em>
+            <p className="rotulo rev">Convites</p>
+            <h2 className="titulo rev d1" style={{ maxWidth: "16ch" }}>
+              Me chame para cantar <em>no seu encontro</em>.
             </h2>
             <p className="texto rev d2" style={{ marginTop: 22 }}>
               Paróquia, retiro, encontro ou grupo de oração, em qualquer lugar
-              do Brasil, inclusive de avião. A apresentação alterna canção,
-              testemunho e oração, e dura o tempo que o seu encontro pedir.
+              do Brasil, inclusive de avião. Eu canto, conto o testemunho de
+              cada música, oro com o povo e canto de novo. O tempo se ajusta ao
+              que o seu encontro precisar.
             </p>
             <p className="texto rev d2">
-              Juninho anda de muletas e não entra em carro comum. O transporte
-              adaptado em Londrina custa cerca de duzentos reais por viagem, e
-              por isso quem convida cuida do deslocamento. Dizer isso aqui,
-              antes de qualquer conversa, poupa constrangimento dos dois lados.
+              Ando de muletas e não entro em carro comum. Aqui em Londrina o
+              carro adaptado sai por volta de duzentos reais a viagem, e por
+              isso quem me chama cuida do deslocamento. Prefiro dizer isso logo
+              de cara a descobrir junto no dia.
             </p>
             <div className="botoes rev d3" style={{ marginTop: 30 }}>
-              <Link className="btn btn-vazio" href="/agenda">
-                O que ele precisa no local
+              <Link className="btn btn-cheio" href="/agenda">
+                Fazer um convite
               </Link>
             </div>
           </div>
@@ -170,25 +167,28 @@ export default function Home() {
       <section className="bloco musicas-home" id="musicas">
         <div className="env">
           <p className="rotulo rev">Músicas</p>
-          <h2 className="titulo rev d1" style={{ maxWidth: "18ch" }}>
+          <h2 className="titulo rev d1" style={{ maxWidth: "19ch" }}>
             Comece por <em>Saudade</em>, que foi a primeira.
           </h2>
           <div className="musicas-home-grade">
             <div>
               <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Quando a amiga contou das três perdas, ele não soube o que
-                responder. Foi tomar banho e lembrou de uma coisa que a mãe
-                contava: os médicos mandaram abortá-lo para que ela
-                sobrevivesse, e o pai pediu para tentarem salvar os dois.
+                Quando aquela amiga me contou das três perdas, eu não soube o
+                que responder. Fui tomar banho e lembrei de uma coisa que minha
+                mãe contava: os médicos mandaram abortar para salvar a vida
+                dela, e meu pai pediu para tentarem salvar os dois.
               </p>
               <p className="fala rev d3" style={{ marginTop: 28 }}>
                 &ldquo;Qual é a sua diferença para as crianças dela?&rdquo;
               </p>
-              <p className="fala-quem rev d3">O que ele ouviu no chuveiro</p>
+              <p className="fala-quem rev d3">
+                O que eu ouvi dentro do chuveiro
+              </p>
               <p className="texto rev d3" style={{ marginTop: 28 }}>
-                Saiu do banho e escreveu a letra inteira de uma vez. Cantou
-                naquela noite para o amigo de Recife que faz as melodias, e os
-                dois choraram. Essa é a música que está tocando aqui ao lado.
+                Saí do banho e escrevi a letra inteira de uma vez. Cantei
+                naquela noite para o amigo de Recife que faz as melodias comigo,
+                e nós dois choramos. É essa música que está tocando aqui ao
+                lado.
               </p>
               <div className="botoes rev d4" style={{ marginTop: 30 }}>
                 <Link className="btn btn-cheio" href="/musicas">
@@ -230,15 +230,15 @@ export default function Home() {
                 O Casamento, a Rosa e <em>a Pedra</em>
               </h2>
               <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Seis músicas, cada uma com o testemunho antes. Ele pediu
-                patrocínio para quase quinhentas pessoas e recebeu cinquenta
-                copos de brinde. Negociou um orçamento de vinte mil reais para
-                quatro mil, fez uma rifa e vendeu metade. Gravou devendo.
+                Seis músicas, cada uma com o testemunho antes. Pedi patrocínio
+                para quase quinhentas pessoas e recebi cinquenta copos de
+                brinde. Negociei um orçamento de vinte mil reais para quatro
+                mil, fiz uma rifa e vendi metade. Gravei devendo.
               </p>
               <p className="texto rev d2">
-                Trinta pessoas foram assistir. Ele conta que ninguém saiu sem
-                chorar. O nome do DVD tem explicação, e ela envolve os cinquenta
-                copos.
+                Trinta pessoas foram assistir e ninguém saiu de lá sem chorar.
+                O nome do DVD tem explicação, e ela começa justamente nos
+                cinquenta copos.
               </p>
               <div className="botoes rev d3" style={{ marginTop: 28 }}>
                 <Link className="btn btn-vazio" href="/dvd">
@@ -255,16 +255,15 @@ export default function Home() {
         <div className="env">
           <div className="contribua-home-grade">
             <div className="rev">
-              <h2 className="titulo" style={{ maxWidth: "17ch" }}>
-                Ainda faltam músicas para gravar.
+              <h2 className="titulo" style={{ maxWidth: "18ch" }}>
+                Ainda tem música esperando estúdio.
               </h2>
             </div>
             <div className="rev d1">
               <p className="texto">
-                São seiscentas e três compostas e seis gravadas. Cada
-                contribuição vira estúdio, divulgação e passagem, que é o que
-                falta para as outras saírem do caderno. Dá para ajudar por Pix,
-                em qualquer valor.
+                São seiscentas e três compostas e seis gravadas. O que falta
+                para as outras saírem do caderno é estúdio, divulgação e
+                passagem. Quem quiser ajudar, ajuda por Pix, em qualquer valor.
               </p>
               <div className="botoes" style={{ marginTop: 26 }}>
                 <Link className="btn btn-cheio" href="/contribua">
