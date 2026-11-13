@@ -448,11 +448,11 @@ body.travado{overflow:hidden}
 .destaque{position:relative;padding:40px 0 120px;overflow:hidden}
 .destaque-palco{position:relative;padding:60px 0 40px}
 .destaque-n{
-  position:absolute;left:50%;top:0;transform:translate(-50%,calc(-18% + (1 - var(--p,1)) * 60px));
+  position:absolute;left:50%;top:50%;transform:translate(-50%,calc(-50% + (1 - var(--p,1)) * 50px));
   font-family:var(--display);font-weight:200;font-size:clamp(9rem,26vw,22rem);
   line-height:.8;letter-spacing:-.05em;color:transparent;
-  -webkit-text-stroke:1px rgba(232,205,178,.14);
-  opacity:calc(.25 + .75 * var(--p,1));pointer-events:none;z-index:0;white-space:nowrap}
+  -webkit-text-stroke:1px rgba(232,205,178,.17);
+  opacity:calc(.2 + .8 * var(--p,1));pointer-events:none;z-index:0;white-space:nowrap}
 .destaque-palco .env{position:relative;z-index:2}
 .destaque-palco .quadro{max-width:960px;margin:0 auto}
 
