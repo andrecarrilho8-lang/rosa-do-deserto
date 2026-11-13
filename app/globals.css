@@ -619,3 +619,21 @@ body.travado{overflow:hidden}
 .capa{border-bottom:0}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:180px;z-index:2;
   pointer-events:none;background:linear-gradient(to bottom,transparent,var(--preto))}
+
+/* as secoes vinho deixam de ter cor chapada: nascem do preto no topo e
+   voltam ao preto embaixo, entao a emenda com a secao vizinha some */
+.dvd-sec,.musicas-home,.player-sec{
+  background:linear-gradient(180deg,var(--preto) 0%,var(--vinho-fundo) 16%,
+    var(--vinho-fundo) 84%,var(--preto) 100%)}
+.novidades{background:linear-gradient(180deg,var(--preto) 0%,rgba(42,5,11,.34) 42%,
+  rgba(42,5,11,.34) 58%,var(--preto) 100%);border-top:0;border-bottom:0}
+.galeria{border-top:0;border-bottom:0;
+  background:linear-gradient(180deg,var(--preto) 0%,#0B0B0B 24%,#0B0B0B 76%,var(--preto) 100%)}
+.citacao{background:linear-gradient(180deg,var(--preto) 0%,var(--vinho-fundo) 18%,
+  var(--vinho-fundo) 82%,var(--preto) 100%)}
+.misterio{border-top:0}
+.ep-sec,.duas-portas,.contribua-home{border-top:0}
+/* uma linha tenue de luz no lugar da borda dura */
+.contribua-home::after,.ep-sec::after{content:"";position:absolute;top:0;left:12%;right:12%;
+  height:1px;z-index:2;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(232,205,178,.22),transparent)}
