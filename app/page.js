@@ -202,37 +202,61 @@ export default function Home() {
       </section>
 
       {/* ---------- DVD ---------- */}
-      <section className="bloco dvd-sec">
+      <section className="dvd-destaque" data-cena>
+        <img
+          className="dvd-fundo"
+          src="/img/rosa-pedra.webp"
+          alt=""
+          aria-hidden="true"
+        />
+        <div className="dvd-veu" />
         <Vela />
         <div className="env">
-          <div className="dvd-grade">
-            <div className="rev">
-              <div className="cartaz">
+          <div className="dvd-destaque-grade">
+            <div className="dvd-poster rev">
+              <div className="dvd-poster-moldura">
                 <img
                   src="/img/cartaz-dvd.webp"
                   alt="Cartaz do DVD O Casamento, a Rosa e a Pedra"
                 />
               </div>
             </div>
-            <div>
-              <p className="rotulo rev">O DVD</p>
-              <h2 className="titulo rev d1" style={{ maxWidth: "15ch" }}>
-                O Casamento, a Rosa e <em>a Pedra</em>
+
+            <div className="dvd-destaque-texto">
+              <span className="selo-vem rev">
+                <i aria-hidden="true" />
+                Vem aí
+              </span>
+              <h2 className="dvd-titulo rev d1">
+                O Casamento,
+                <br />
+                a Rosa e <em>a Pedra</em>
               </h2>
-              <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Seis canções, cada uma precedida do testemunho que a originou. A
-                gravação foi viabilizada com orçamento reduzido de vinte mil
-                para quatro mil reais, uma rifa e o apoio de quem acompanhava o
-                trabalho. Trinta pessoas assistiram ao vivo.
+              <p className="texto rev d2" style={{ marginTop: 24 }}>
+                O primeiro DVD do projeto. Seis canções, cada uma precedida do
+                testemunho que a originou, gravadas em áudio e vídeo diante de
+                plateia.
               </p>
-              <p className="texto rev d2">
-                O título vem das bodas de Caná e de um episódio concreto da
-                produção, quando o único patrocínio recebido foram cinquenta
-                copos.
-              </p>
-              <div className="botoes rev d3" style={{ marginTop: 28 }}>
-                <Link className="btn btn-vazio" href="/dvd">
+              <ul className="dvd-numeros rev d3">
+                <li>
+                  <b>6</b>
+                  <span>canções gravadas</span>
+                </li>
+                <li>
+                  <b>6</b>
+                  <span>testemunhos</span>
+                </li>
+                <li>
+                  <b>30</b>
+                  <span>pessoas na plateia</span>
+                </li>
+              </ul>
+              <div className="botoes rev d4" style={{ marginTop: 34 }}>
+                <Link className="btn btn-cheio" href="/dvd">
                   A história do DVD
+                </Link>
+                <Link className="btn btn-vazio" href="/musicas">
+                  Ouvir o que já saiu
                 </Link>
               </div>
             </div>
