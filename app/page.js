@@ -37,7 +37,19 @@ export default function Home() {
               que acabou de gravar.
             </p>
 
-            <ul className="ficha rev d3">
+            <div className="botoes rev d3">
+              <a className="btn btn-cheio" href="#musicas">
+                <svg viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M8 5v14l11-7z" />
+                </svg>
+                Ouvir Saudade
+              </a>
+              <Link className="btn btn-vazio" href="/historia">
+                Por que Rosa do Deserto
+              </Link>
+            </div>
+
+            <ul className="ficha rev d4">
               <li>
                 <b>603</b>
                 <span>músicas compostas em dois anos e meio</span>
@@ -51,18 +63,6 @@ export default function Home() {
                 <span>O Casamento, a Rosa e a Pedra, já gravado</span>
               </li>
             </ul>
-
-            <div className="botoes rev d4">
-              <a className="btn btn-cheio" href="#musicas">
-                <svg viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M8 5v14l11-7z" />
-                </svg>
-                Ouvir Saudade
-              </a>
-              <Link className="btn btn-vazio" href="/historia">
-                Por que Rosa do Deserto
-              </Link>
-            </div>
           </div>
         </div>
       </header>
