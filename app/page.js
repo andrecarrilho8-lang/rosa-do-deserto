@@ -5,7 +5,7 @@ import { posts, ep } from "@/lib/dados";
 export default function Home() {
   return (
     <>
-      {/* ---------- apresentação ---------- */}
+      {/* ---------- apresentação institucional ---------- */}
       <header className="hero">
         <div className="hero-foto">
           <img
@@ -18,37 +18,40 @@ export default function Home() {
         <div className="env hero-dentro">
           <div className="hero-conteudo">
             <img className="selo rev" src="/img/rosa-traco.svg" alt="" />
-            <p className="rotulo rev">
-              Juninho Bergamin · Cantor e compositor católico · Londrina, PR
+            <p className="rotulo rev">Projeto Rosa do Deserto</p>
+            <h1 className="rev d1">Juninho Bergamin</h1>
+            <p className="hero-funcao rev d1">
+              Cantor e compositor católico · Londrina, Paraná
             </p>
-            <h1 className="rev d1">
-              Prometi vinte músicas para uma amiga.
-              <br />
-              <em>Já são seiscentas e três.</em>
-            </h1>
             <p className="texto rev d2 hero-lead">
-              Componho quase sempre de madrugada, dentro de casa, porque uma
-              limitação na perna me impede de sair sem carro adaptado. Quando
-              canto, conto antes o que aconteceu comigo para aquela letra
-              existir. É assim no palco e é assim no DVD que gravei.
+              O Projeto Rosa do Deserto reúne a obra autoral de Juninho
+              Bergamin: seiscentas e três canções compostas em dois anos e meio,
+              o EP Rosa do Deserto, nas plataformas desde {ep.lancamento}, e o
+              DVD O Casamento, a Rosa e a Pedra, gravado com seis músicas e os
+              testemunhos que deram origem a cada uma.
+            </p>
+            <p className="texto rev d2 hero-lead">
+              O trabalho é levado a paróquias, retiros, encontros e grupos de
+              oração em todo o Brasil, sempre no mesmo formato: a canção vem
+              depois da história que a gerou.
             </p>
 
             <div className="botoes rev d3">
               <Link className="btn btn-cheio" href="/agenda">
-                Quero o Juninho no meu encontro
+                Convidar para um evento
               </Link>
               <a className="btn btn-vazio" href="#musicas">
                 <svg viewBox="0 0 24 24">
                   <path fill="currentColor" d="M8 5v14l11-7z" />
                 </svg>
-                Ouvir Saudade
+                Ouvir as músicas
               </a>
             </div>
 
             <ul className="ficha rev d4">
               <li>
                 <b>603</b>
-                <span>músicas compostas em dois anos e meio</span>
+                <span>canções compostas em dois anos e meio</span>
               </li>
               <li>
                 <b>EP</b>
@@ -79,45 +82,39 @@ export default function Home() {
               </Link>
             ))}
           </div>
-          <p className="nov-ponte rev d3">
-            As três coisas vêm da mesma história: a amiga para quem eu prometi
-            as vinte músicas.
-          </p>
         </div>
       </section>
 
-      {/* ---------- história ---------- */}
+      {/* ---------- o projeto ---------- */}
       <section className="bloco historia-sec">
         <div className="env">
           <div className="historia-grade">
             <div>
-              <p className="rotulo rev">Quem eu sou</p>
-              <h2 className="titulo rev d1" style={{ maxWidth: "17ch" }}>
-                O nome veio de <em>um sonho</em>.
+              <p className="rotulo rev">O projeto</p>
+              <h2 className="titulo rev d1" style={{ maxWidth: "18ch" }}>
+                A rosa do deserto nasce na areia e <em>mostra onde tem água</em>.
               </h2>
               <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Minha mãe morreu em setembro de 2021, de uma semana para outra.
-                Um ano depois sonhei com ela num canteiro de rosas, entregando
-                uma flor que eu nunca tinha visto. Na semana seguinte
-                reencontrei uma amiga de vinte anos atrás, morando fora,
-                recém-separada, depois de perder três filhos antes de eles
+                O nome do projeto vem dessa planta e de um sonho. Em setembro de
+                2021 Juninho perdeu a mãe. Um ano depois sonhou com ela num
+                canteiro de rosas, entregando uma flor que ele não conhecia. Na
+                semana seguinte reencontrou uma amiga de vinte anos atrás,
+                recém-separada, que havia perdido três filhos antes de eles
                 nascerem.
               </p>
               <p className="texto rev d2">
-                Quis mandar sementes de rosa para ela, porque flor cortada não
-                aguentaria a viagem. Procurei na internet e o quarto resultado
-                era semente de rosa do deserto, igualzinha à flor do sonho.
-                Depois fui pesquisar o que a planta faz: ela nasce na areia e
-                mostra onde tem água.
+                Ao procurar sementes de rosa para enviar a ela, encontrou a rosa
+                do deserto e reconheceu a flor do sonho. As canções começaram
+                ali, como uma promessa de vinte músicas que hoje são seiscentas
+                e três. A identidade dessa amiga nunca foi revelada, e não será.
               </p>
-              <p className="texto rev d3">
-                Prometi vinte músicas para aquela amiga. Hoje são seiscentas e
-                três, e ela continua ouvindo cada uma antes de todo mundo. Quem
-                ela é eu não digo.
+              <p className="fala rev d3" style={{ marginTop: 30 }}>
+                &ldquo;Foi só um jeito de Deus me mostrar o conceito.&rdquo;
               </p>
+              <p className="fala-quem rev d3">Juninho Bergamin</p>
               <div className="botoes rev d3" style={{ marginTop: 30 }}>
                 <Link className="btn btn-vazio" href="/historia">
-                  A história inteira
+                  A história completa
                 </Link>
               </div>
             </div>
@@ -132,31 +129,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- agenda ---------- */}
+      {/* ---------- convites ---------- */}
       <section className="bloco agenda-home">
         <img className="agenda-fundo" src="/img/palco.webp" alt="" aria-hidden="true" />
         <div className="agenda-veu" />
         <div className="env">
           <div className="agenda-home-conteudo">
             <p className="rotulo rev">Convites</p>
-            <h2 className="titulo rev d1" style={{ maxWidth: "16ch" }}>
-              Me chame para cantar <em>no seu encontro</em>.
+            <h2 className="titulo rev d1" style={{ maxWidth: "17ch" }}>
+              Apresentações em todo o Brasil
             </h2>
             <p className="texto rev d2" style={{ marginTop: 22 }}>
-              Paróquia, retiro, encontro ou grupo de oração, em qualquer lugar
-              do Brasil, inclusive de avião. Eu canto, conto o testemunho de
-              cada música, oro com o povo e canto de novo. O tempo se ajusta ao
-              que o seu encontro precisar.
+              O projeto atende paróquias, retiros, encontros e grupos de oração,
+              inclusive fora do Paraná. A apresentação alterna canção,
+              testemunho e oração, e a duração se ajusta à programação de cada
+              encontro.
             </p>
             <p className="texto rev d2">
-              Ando de muletas e não entro em carro comum. Aqui em Londrina o
-              carro adaptado sai por volta de duzentos reais a viagem, e por
-              isso quem me chama cuida do deslocamento. Prefiro dizer isso logo
-              de cara a descobrir junto no dia.
+              Juninho anda de muletas e não entra em carro comum. O transporte
+              adaptado custa cerca de duzentos reais por viagem, e por isso o
+              deslocamento fica a cargo de quem convida. A página de convites
+              traz a lista do que é necessário no local.
             </p>
             <div className="botoes rev d3" style={{ marginTop: 30 }}>
               <Link className="btn btn-cheio" href="/agenda">
-                Fazer um convite
+                Como convidar
               </Link>
             </div>
           </div>
@@ -167,28 +164,28 @@ export default function Home() {
       <section className="bloco musicas-home" id="musicas">
         <div className="env">
           <p className="rotulo rev">Músicas</p>
-          <h2 className="titulo rev d1" style={{ maxWidth: "19ch" }}>
-            Comece por <em>Saudade</em>, que foi a primeira.
+          <h2 className="titulo rev d1" style={{ maxWidth: "20ch" }}>
+            <em>Saudade</em>, a primeira canção do projeto
           </h2>
           <div className="musicas-home-grade">
             <div>
               <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Quando aquela amiga me contou das três perdas, eu não soube o
-                que responder. Fui tomar banho e lembrei de uma coisa que minha
-                mãe contava: os médicos mandaram abortar para salvar a vida
-                dela, e meu pai pediu para tentarem salvar os dois.
+                Foi escrita de uma só vez, na noite em que aquela amiga contou
+                das três perdas. Juninho conta que, ao orar, lembrou de um
+                episódio da própria família: os médicos indicaram o aborto para
+                salvar a vida da mãe dele, e o pai pediu que tentassem salvar os
+                dois.
               </p>
               <p className="fala rev d3" style={{ marginTop: 28 }}>
                 &ldquo;Qual é a sua diferença para as crianças dela?&rdquo;
               </p>
               <p className="fala-quem rev d3">
-                O que eu ouvi dentro do chuveiro
+                A pergunta que ele diz ter ouvido naquele dia
               </p>
               <p className="texto rev d3" style={{ marginTop: 28 }}>
-                Saí do banho e escrevi a letra inteira de uma vez. Cantei
-                naquela noite para o amigo de Recife que faz as melodias comigo,
-                e nós dois choramos. É essa música que está tocando aqui ao
-                lado.
+                A melodia foi feita no mesmo dia com um parceiro de Recife, que
+                trabalha com ele por telefone. A canção abriu o EP e abre também
+                as apresentações.
               </p>
               <div className="botoes rev d4" style={{ marginTop: 30 }}>
                 <Link className="btn btn-cheio" href="/musicas">
@@ -230,19 +227,19 @@ export default function Home() {
                 O Casamento, a Rosa e <em>a Pedra</em>
               </h2>
               <p className="texto rev d2" style={{ marginTop: 22 }}>
-                Seis músicas, cada uma com o testemunho antes. Pedi patrocínio
-                para quase quinhentas pessoas e recebi cinquenta copos de
-                brinde. Negociei um orçamento de vinte mil reais para quatro
-                mil, fiz uma rifa e vendi metade. Gravei devendo.
+                Seis canções, cada uma precedida do testemunho que a originou. A
+                gravação foi viabilizada com orçamento reduzido de vinte mil
+                para quatro mil reais, uma rifa e o apoio de quem acompanhava o
+                trabalho. Trinta pessoas assistiram ao vivo.
               </p>
               <p className="texto rev d2">
-                Trinta pessoas foram assistir e ninguém saiu de lá sem chorar.
-                O nome do DVD tem explicação, e ela começa justamente nos
-                cinquenta copos.
+                O título vem das bodas de Caná e de um episódio concreto da
+                produção, quando o único patrocínio recebido foram cinquenta
+                copos.
               </p>
               <div className="botoes rev d3" style={{ marginTop: 28 }}>
                 <Link className="btn btn-vazio" href="/dvd">
-                  Por que casamento
+                  A história do DVD
                 </Link>
               </div>
             </div>
@@ -255,15 +252,15 @@ export default function Home() {
         <div className="env">
           <div className="contribua-home-grade">
             <div className="rev">
-              <h2 className="titulo" style={{ maxWidth: "18ch" }}>
-                Ainda tem música esperando estúdio.
+              <h2 className="titulo" style={{ maxWidth: "19ch" }}>
+                Seiscentas e três compostas, seis gravadas.
               </h2>
             </div>
             <div className="rev d1">
               <p className="texto">
-                São seiscentas e três compostas e seis gravadas. O que falta
-                para as outras saírem do caderno é estúdio, divulgação e
-                passagem. Quem quiser ajudar, ajuda por Pix, em qualquer valor.
+                As demais canções dependem de estúdio, divulgação e
+                deslocamento. As contribuições do público são aplicadas nesses
+                três itens e podem ser feitas por Pix, em qualquer valor.
               </p>
               <div className="botoes" style={{ marginTop: 26 }}>
                 <Link className="btn btn-cheio" href="/contribua">

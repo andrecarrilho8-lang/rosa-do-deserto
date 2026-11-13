@@ -407,3 +407,10 @@ body.travado{overflow:hidden}
 .contribua-home{border-top:var(--borda)}
 .contribua-home-grade{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 @media(max-width:860px){.contribua-home-grade{grid-template-columns:1fr;gap:28px}}
+
+.hero-funcao{font-size:15px;letter-spacing:.06em;color:var(--creme-fraco);
+  margin:-8px 0 24px;text-transform:uppercase}
+.hero h1{margin-bottom:10px}
+@media(min-width:900px) and (max-height:830px){
+  .hero-funcao{font-size:13.5px;margin:-6px 0 18px}
+}
