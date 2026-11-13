@@ -2,6 +2,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Rodape from "@/components/Rodape";
 import Revelar from "@/components/Revelar";
+import Abertura from "@/components/Abertura";
 import { Petalas } from "@/components/Atmosfera";
 
 export const metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/img/simbolo.svg" />
       </head>
       <body>
+        <Abertura />
         <Petalas />
         <Nav />
         <main>{children}</main>
