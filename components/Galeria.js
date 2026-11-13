@@ -1,10 +1,10 @@
 const ladrilhos = [
-  { src: "/img/gal-cantando.webp", legenda: "No estúdio", tom: "tom-vermelho", classe: "alta" },
-  { src: "/img/gal-sorriso.webp", legenda: "Entre uma música e outra", tom: "tom-vela", classe: "" },
-  { src: "/img/gal-perfil.webp", legenda: "Luz natural", tom: "", classe: "alta" },
-  { src: "/img/gal-varanda.webp", legenda: "A varanda de casa", tom: "tom-creme", classe: "" },
-  { src: "/img/gal-jardim.webp", legenda: "Fora de casa", tom: "tom-vela", classe: "larga" },
-  { src: "/img/gal-vinho.webp", legenda: "Antes de gravar", tom: "tom-vermelho", classe: "" },
+  { src: "/img/gal-cantando.webp", tom: "tom-vermelho" },
+  { src: "/img/gal-sorriso.webp", tom: "tom-vela" },
+  { src: "/img/gal-perfil.webp", tom: "" },
+  { src: "/img/gal-varanda.webp", tom: "tom-creme" },
+  { src: "/img/gal-estudio.webp", tom: "tom-vela" },
+  { src: "/img/gal-vinho.webp", tom: "tom-vermelho" },
 ];
 
 export default function Galeria() {
@@ -26,16 +26,11 @@ export default function Galeria() {
 
         <div className="mosaico">
           {ladrilhos.map((l) => (
-            <figure
-              key={l.src}
-              className={`ladrilho ${l.classe}`}
-              data-cena
-            >
+            <figure key={l.src} className="ladrilho" data-cena>
               <div className={`duo ${l.tom}`}>
                 <img src={l.src} alt="" loading="lazy" />
                 <span className="realce" />
               </div>
-              <figcaption className="ladrilho-legenda">{l.legenda}</figcaption>
             </figure>
           ))}
         </div>

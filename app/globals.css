@@ -160,10 +160,6 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:300;letter-spacing:-.02em;col
 
 /* ==================== HOME ==================== */
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
-.hero-foto{position:absolute;inset:0;z-index:0}
-.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:72% 40%;opacity:.82;
-  transform:scale(1.06);animation:respira 24s ease-in-out infinite alternate}
-@keyframes respira{to{transform:scale(1.13)}}
 .hero-veu{position:absolute;inset:0;z-index:1;
   background:linear-gradient(100deg,var(--preto) 6%,rgba(16,16,16,.92) 32%,rgba(42,5,11,.55) 58%,rgba(16,16,16,.3) 100%),
              linear-gradient(to top,var(--preto) 0%,transparent 34%)}
@@ -554,34 +550,29 @@ body.travado{overflow:hidden}
 
 /* ==================== GALERIA EM MOSAICO ==================== */
 .galeria{border-top:var(--borda);border-bottom:var(--borda);overflow:hidden;
-  background:#0B0B0B;padding:96px 0}
+  background:#0B0B0B;padding:96px 0 0}
+.galeria > .env{padding-left:0;padding-right:0;max-width:none}
+.galeria .galeria-topo{max-width:var(--max);margin-left:auto;margin-right:auto;
+  padding:0 32px 46px}
 .galeria-topo{display:flex;justify-content:space-between;align-items:flex-end;
   gap:24px;flex-wrap:wrap;margin-bottom:46px}
 .galeria-topo h2{font-size:clamp(1.9rem,4vw,2.9rem);line-height:1.08;max-width:17ch}
 .galeria-topo p{font-size:16.5px;color:var(--creme-fraco);max-width:40ch}
-.mosaico{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.ladrilho{position:relative;border-radius:10px;overflow:hidden;
+.mosaico{display:grid;grid-template-columns:repeat(3,1fr);gap:0;width:100%}
+.ladrilho{position:relative;overflow:hidden;margin:0;
   transform:translateY(calc((1 - var(--p,1)) * var(--desloca,70px)));
   opacity:calc(.1 + .9 * var(--p,1));will-change:transform,opacity}
-.ladrilho.alta{grid-row:span 2}
-.ladrilho .duo{width:100%;height:100%;min-height:100%}
-.ladrilho.larga{grid-column:span 2}
+.ladrilho .duo{width:100%;height:100%;aspect-ratio:4 / 5}
 .mosaico .ladrilho:nth-child(1){--desloca:40px}
 .mosaico .ladrilho:nth-child(2){--desloca:110px}
 .mosaico .ladrilho:nth-child(3){--desloca:70px}
 .mosaico .ladrilho:nth-child(4){--desloca:130px}
 .mosaico .ladrilho:nth-child(5){--desloca:55px}
 .mosaico .ladrilho:nth-child(6){--desloca:95px}
-.ladrilho-legenda{position:absolute;left:0;right:0;bottom:0;z-index:4;
-  padding:18px 16px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--creme-forte);
-  background:linear-gradient(to top,rgba(16,16,16,.85),transparent);
-  opacity:0;transform:translateY(10px);transition:all .5s cubic-bezier(.19,1,.22,1)}
-.ladrilho:hover .ladrilho-legenda{opacity:1;transform:none}
 @media(max-width:900px){
-  .mosaico{grid-template-columns:repeat(2,1fr);gap:10px}
-  .ladrilho.larga{grid-column:span 2}
-  .galeria{padding:66px 0}
+  .mosaico{grid-template-columns:repeat(2,1fr)}
+  .galeria{padding:66px 0 0}
+  .galeria .galeria-topo{padding:0 20px 32px}
 }
 
 /* parallax de fundo */
