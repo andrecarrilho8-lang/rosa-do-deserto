@@ -173,10 +173,16 @@ h1,h2,h3,h4{font-family:var(--display);font-weight:300;letter-spacing:-.02em;col
 .hero h1{font-size:clamp(2.5rem,6vw,4.5rem);line-height:1.05;margin-bottom:26px}
 .hero-lead{font-size:20px;max-width:50ch;margin-bottom:38px}
 @media(min-width:900px) and (max-height:830px){
-  .hero-dentro{padding-top:96px;padding-bottom:70px}
-  .hero h1{font-size:clamp(2.4rem,4.8vw,3.6rem)}
-  .hero-lead{font-size:18px;margin-bottom:30px}
-  .selo{width:54px;margin-bottom:20px}
+  .hero-dentro{padding-top:88px;padding-bottom:56px}
+  .hero h1{font-size:clamp(2.1rem,4.1vw,3.05rem);margin-bottom:20px}
+  .hero-lead{font-size:16.5px;line-height:1.66}
+  .hero-lead + .hero-lead{margin-top:12px}
+  .selo{width:46px;margin-bottom:16px}
+  .rotulo{margin-bottom:14px}
+  .ficha{margin:20px 0 22px;padding-top:18px;gap:18px}
+  .ficha b{font-size:1.4rem}
+  .ficha span{font-size:13px}
+  .btn{padding:13px 25px}
 }
 
 .player{position:relative;width:100%;padding-top:56.25%;border-radius:4px;overflow:hidden;
@@ -371,13 +377,14 @@ body.travado{overflow:hidden}
 
 /* ==================== HOME: apresentação ==================== */
 .hero-lead + .hero-lead{margin-top:16px}
-.ficha{list-style:none;display:flex;gap:34px;flex-wrap:wrap;margin:34px 0 38px;
-  padding-top:26px;border-top:var(--borda)}
-.ficha li{display:flex;flex-direction:column;gap:5px;max-width:19ch}
-.ficha b{font-family:var(--display);font-weight:300;font-size:1.9rem;line-height:1;
+.ficha{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+  margin:28px 0 32px;padding-top:24px;border-top:var(--borda)}
+.ficha li{display:flex;flex-direction:column;gap:4px}
+.ficha b{font-family:var(--display);font-weight:300;font-size:1.7rem;line-height:1;
   color:var(--creme-forte);letter-spacing:-.02em}
-.ficha span{font-size:14.5px;color:var(--creme-fraco);line-height:1.5}
-@media(max-width:700px){.ficha{gap:22px;margin:26px 0 30px}.ficha b{font-size:1.5rem}}
+.ficha span{font-size:14px;color:var(--creme-fraco);line-height:1.48}
+@media(max-width:700px){.ficha{grid-template-columns:1fr 1fr;gap:18px;margin:22px 0 26px}
+  .ficha b{font-size:1.4rem}.ficha span{font-size:13.5px}}
 
 .nov-ponte{margin-top:30px;font-size:17px;color:var(--creme-fraco);max-width:72ch;
   line-height:1.68}
