@@ -13,7 +13,7 @@ export default function Musicas() {
   return (
     <>
       {/* ---------- capa ---------- */}
-      <section className="capa capa-musicas">
+      <section data-cena className="capa capa-musicas">
         <img className="fundo" src="/img/cantando.webp" alt="" />
         <div className="veu" />
         <div className="env">

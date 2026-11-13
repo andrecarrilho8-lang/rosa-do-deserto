@@ -10,7 +10,7 @@ export const metadata = {
 export default function Dvd() {
   return (
     <>
-      <section className="capa">
+      <section data-cena className="capa">
         <img className="fundo" src="/img/rosa-pedra.webp" alt="" />
         <div className="veu" />
         <div className="env">

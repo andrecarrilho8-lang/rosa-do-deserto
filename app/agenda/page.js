@@ -17,7 +17,7 @@ const precisa = [
 export default function Agenda() {
   return (
     <>
-      <section className="capa">
+      <section data-cena className="capa">
         <img className="fundo" src="/img/palco.webp" alt="" />
         <div className="veu" />
         <div className="env">

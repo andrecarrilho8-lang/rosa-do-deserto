@@ -25,7 +25,7 @@ const canais = [
 export default function Contato() {
   return (
     <>
-      <section className="capa">
+      <section data-cena className="capa">
         <img className="fundo" src="/img/hero-noite.webp" alt="" />
         <div className="veu" />
         <div className="env">

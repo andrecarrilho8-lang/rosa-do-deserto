@@ -61,7 +61,7 @@ const capitulos = [
 export default function Historia() {
   return (
     <>
-      <section className="capa">
+      <section data-cena className="capa">
         <img className="fundo" src="/img/pb.webp" alt="" />
         <div className="veu" />
         <div className="env">

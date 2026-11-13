@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Vela } from "@/components/Atmosfera";
 import HeroFotos from "@/components/HeroFotos";
+import Galeria from "@/components/Galeria";
 import { posts, ep } from "@/lib/dados";
 
 export default function Home() {
@@ -100,19 +101,20 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="rev d1">
-              <img
-                className="historia-foto"
-                src="/img/retrato-estudio.webp"
-                alt="Retrato de Juninho Bergamin"
-              />
+            <div className="rev d1" data-cena>
+              <div className="duo tom-vermelho historia-foto">
+                <img src="/img/gal-estudio.webp" alt="Retrato de Juninho Bergamin" />
+                <span className="realce" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <Galeria />
+
       {/* ---------- convites ---------- */}
-      <section className="bloco agenda-home">
+      <section className="bloco agenda-home" data-cena>
         <img className="agenda-fundo" src="/img/palco.webp" alt="" aria-hidden="true" />
         <div className="agenda-veu" />
         <div className="env">

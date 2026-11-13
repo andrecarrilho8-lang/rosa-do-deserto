@@ -9,7 +9,7 @@ export const metadata = {
 export default function Blog() {
   return (
     <>
-      <section className="capa">
+      <section data-cena className="capa">
         <img className="fundo" src="/img/textura-petalas.webp" alt="" />
         <div className="veu" />
         <div className="env">

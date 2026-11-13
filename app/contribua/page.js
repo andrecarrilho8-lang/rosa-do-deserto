@@ -10,7 +10,7 @@ export const metadata = {
 export default function Contribua() {
   return (
     <>
-      <section className="capa">
+      <section data-cena className="capa">
         <img className="fundo" src="/img/dunas.webp" alt="" />
         <div className="veu" />
         <div className="env">
