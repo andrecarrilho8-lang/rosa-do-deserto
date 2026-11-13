@@ -708,3 +708,14 @@ body.travado{overflow:hidden}
   .dvd-numeros{gap:28px}
   .dvd-numeros b{font-size:1.9rem}
 }
+
+/* a emenda com o rodape tambem deixa de ser uma linha reta */
+.rodape{border-top:0;
+  background:linear-gradient(180deg,var(--preto) 0%,#0B0B0B 22%,#0B0B0B 100%)}
+.rodape::before{content:"";position:absolute;top:0;left:12%;right:12%;height:1px;
+  z-index:2;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(232,205,178,.2),transparent)}
+.rodape::after{content:"";position:absolute;top:-130px;left:50%;transform:translateX(-50%);
+  width:62%;height:230px;z-index:0;pointer-events:none;filter:blur(60px);
+  background:radial-gradient(circle,rgba(189,32,40,.1),transparent 66%)}
+.rodape .env{position:relative;z-index:1}
