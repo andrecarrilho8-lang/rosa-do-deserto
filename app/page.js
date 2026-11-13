@@ -264,6 +264,36 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ---------- lojinha ---------- */}
+      <section className="bloco-curto lojinha-home" data-cena>
+        <div className="env">
+          <div className="lojinha-home-grade">
+            <div className="lojinha-marca rev">
+              <img className="textura" src="/img/petalas.webp" alt="" />
+              <img className="rosa" src="/img/simbolo.svg" alt="" />
+            </div>
+
+            <div>
+              <p className="rotulo rev">Lojinha</p>
+              <h2 className="titulo rev d1" style={{ maxWidth: "17ch" }}>
+                A lojinha do projeto
+              </h2>
+              <p className="texto rev d2" style={{ marginTop: 20 }}>
+                Os primeiros itens estão em produção. Quando ficarem prontos,
+                aparecem na lojinha com foto, descrição e valor. O pedido é
+                feito por uma conversa no WhatsApp, sem carrinho e sem
+                cadastro.
+              </p>
+              <div className="botoes rev d3" style={{ marginTop: 28 }}>
+                <Link className="btn btn-vazio" href="/loja">
+                  Ver a lojinha
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---------- contribua ---------- */}
       <section className="bloco-curto contribua-home">
         <div className="env">

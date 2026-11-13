@@ -8,6 +8,7 @@ const paginas = [
   { href: "/historia", nome: "História" },
   { href: "/musicas", nome: "Músicas" },
   { href: "/dvd", nome: "O DVD" },
+  { href: "/loja", nome: "Lojinha" },
   { href: "/agenda", nome: "Agenda" },
   { href: "/blog", nome: "Blog" },
   { href: "/contato", nome: "Contato" },

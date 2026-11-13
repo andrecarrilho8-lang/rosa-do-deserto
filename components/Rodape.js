@@ -33,6 +33,7 @@ export default function Rodape() {
             <h5>Falar com o projeto</h5>
             <ul>
               <li><Link href="/agenda">Convites e apresentações</Link></li>
+              <li><Link href="/loja">Lojinha</Link></li>
               <li><Link href="/contribua">Como contribuir</Link></li>
               <li><Link href="/blog">Blog e novidades</Link></li>
               <li><Link href="/contato">Contato</Link></li>
