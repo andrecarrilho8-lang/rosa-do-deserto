@@ -110,16 +110,6 @@ export default function Loja() {
                   );
                 })}
               </div>
-
-              <div className="loja-passos rev">
-                {passos.map((p) => (
-                  <div key={p.n} className="passo">
-                    <b>{p.n}</b>
-                    <h3>{p.titulo}</h3>
-                    <p>{p.texto}</p>
-                  </div>
-                ))}
-              </div>
             </>
           ) : (
             <div className="vitrine-vazia rev">
@@ -140,6 +130,16 @@ export default function Loja() {
               </div>
             </div>
           )}
+
+          <div className="loja-passos rev">
+            {passos.map((p) => (
+              <div key={p.n} className="passo">
+                <b>{p.n}</b>
+                <h3>{p.titulo}</h3>
+                <p>{p.texto}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
