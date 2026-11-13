@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Vela } from "@/components/Atmosfera";
+import HeroFotos from "@/components/HeroFotos";
 import { posts, ep } from "@/lib/dados";
 
 export default function Home() {
@@ -7,12 +8,7 @@ export default function Home() {
     <>
       {/* ---------- apresentação institucional ---------- */}
       <header className="hero">
-        <div className="hero-foto">
-          <img
-            src="/img/hero-ambar.webp"
-            alt="Juninho Bergamin apoiado nas muletas, no estúdio"
-          />
-        </div>
+        <HeroFotos />
         <div className="hero-veu" />
         <Vela />
         <div className="env hero-dentro">
@@ -48,25 +44,7 @@ export default function Home() {
               </a>
             </div>
 
-            <p className="hero-secundario rev d3">
-              <Link href="/agenda">Convites para eventos e apresentações</Link>
-            </p>
-
-            <ul className="ficha rev d4">
-              <li>
-                <b>603</b>
-                <span>canções compostas em dois anos e meio</span>
-              </li>
-              <li>
-                <b>EP</b>
-                <span>Rosa do Deserto, nas plataformas desde {ep.lancamento}</span>
-              </li>
-              <li>
-                <b>DVD</b>
-                <span>O Casamento, a Rosa e a Pedra, já gravado</span>
-              </li>
-            </ul>
-          </div>
+         </div>
         </div>
       </header>
 
