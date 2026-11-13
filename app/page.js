@@ -37,16 +37,20 @@ export default function Home() {
             </p>
 
             <div className="botoes rev d3">
-              <Link className="btn btn-cheio" href="/agenda">
-                Convidar para um evento
+              <Link className="btn btn-cheio" href="/historia">
+                Conheça o projeto
               </Link>
               <a className="btn btn-vazio" href="#musicas">
                 <svg viewBox="0 0 24 24">
                   <path fill="currentColor" d="M8 5v14l11-7z" />
                 </svg>
-                Ouvir as músicas
+                Ouça as músicas
               </a>
             </div>
+
+            <p className="hero-secundario rev d3">
+              <Link href="/agenda">Convites para eventos e apresentações</Link>
+            </p>
 
             <ul className="ficha rev d4">
               <li>

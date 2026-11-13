@@ -4,12 +4,12 @@ import { agenda } from "@/lib/dados";
 export const metadata = {
   title: "Convites e agenda | Projeto Rosa do Deserto",
   description:
-    "Como convidar Juninho Bergamin para cantar e dar testemunho na sua paróquia, retiro ou encontro.",
+    "Como convidar Juninho Bergamin para cantar e dar testemunho em paróquias, retiros e encontros.",
 };
 
 const precisa = [
-  "Acesso sem escada até o palco, ou uma rampa",
-  "Cadeira ou banqueta alta, porque eu canto sentado",
+  "Acesso sem escada até o palco, ou rampa",
+  "Cadeira ou banqueta alta, porque a apresentação é feita sentado",
   "Transporte adaptado do aeroporto até o local",
   "Som com retorno e um microfone com pedestal",
 ];
@@ -23,11 +23,11 @@ export default function Agenda() {
         <div className="env">
           <p className="rotulo rev">Convites e agenda</p>
           <h1 className="rev d1">
-            Eu vou. <em>Só preciso chegar.</em>
+            Apresentações em <em>todo o Brasil</em>
           </h1>
           <p className="texto rev d2">
-            Paróquia, retiro, encontro, grupo de oração. Em qualquer lugar do
-            Brasil, inclusive de avião.
+            Paróquias, retiros, encontros e grupos de oração, inclusive fora do
+            Paraná e com deslocamento aéreo.
           </p>
         </div>
       </section>
@@ -40,22 +40,23 @@ export default function Agenda() {
                 Como é a apresentação
               </h2>
               <p className="texto rev d1" style={{ marginTop: 22 }}>
-                Eu canto, conto como fiz aquela música, oro com as pessoas e
-                canto de novo. Não é show de vinte músicas emendadas, e eu faço
-                questão disso. A duração se ajusta ao que o seu encontro
-                precisar.
+                O roteiro alterna canção, testemunho e oração. Antes de cada
+                música, Juninho conta o episódio que deu origem à letra. Não é
+                um show de músicas emendadas, e a duração se ajusta à
+                programação do encontro.
               </p>
               <p className="fala rev d2" style={{ marginTop: 30 }}>
                 &ldquo;O povo tem que sair de lá convencido de que Deus existe,
                 mesmo que não lembre o meu nome.&rdquo;
               </p>
+              <p className="fala-quem rev d2">Juninho Bergamin</p>
 
-              <h3 className="sub rev">O que eu preciso no local</h3>
+              <h3 className="sub rev">O que é necessário no local</h3>
               <p className="texto rev d1">
-                Ando de muletas e não entro em carro comum. Aqui em Londrina o
-                carro adaptado sai por volta de duzentos reais a viagem, e por
-                isso quem me convida cuida do deslocamento. Deixar isso
-                combinado antes poupa constrangimento dos dois lados.
+                Juninho anda de muletas e não entra em carro comum. Em Londrina,
+                o transporte adaptado custa cerca de duzentos reais por viagem,
+                e por isso o deslocamento fica a cargo de quem convida. Deixar
+                isso combinado antes evita constrangimento para os dois lados.
               </p>
               <ul className="precisa rev d2">
                 {precisa.map((p) => (
@@ -89,10 +90,10 @@ export default function Agenda() {
                 </ul>
               ) : (
                 <div className="sem-datas rev d1">
-                  <strong>Ainda não tenho data marcada</strong>
+                  <strong>Nenhuma data confirmada no momento</strong>
                   <span>
-                    As apresentações confirmadas aparecem aqui. Se você quiser
-                    ser a primeira, é só me chamar.
+                    As apresentações agendadas passam a ser listadas aqui assim
+                    que forem confirmadas.
                   </span>
                 </div>
               )}

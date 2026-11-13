@@ -4,7 +4,7 @@ import { Vela } from "@/components/Atmosfera";
 export const metadata = {
   title: "O Casamento, a Rosa e a Pedra | Projeto Rosa do Deserto",
   description:
-    "A história do DVD de Juninho Bergamin: cinquenta copos, uma pregação sobre as bodas de Caná e trinta pessoas na plateia.",
+    "O DVD de Juninho Bergamin: seis canções, seis testemunhos e a produção que o viabilizou.",
 };
 
 export default function Dvd() {
@@ -19,8 +19,8 @@ export default function Dvd() {
             O Casamento, a Rosa e <em>a Pedra</em>
           </h1>
           <p className="texto rev d2">
-            Seis músicas, seis testemunhos, gravados numa sala com velas no chão
-            e uma poltrona vermelha.
+            Seis canções, cada uma precedida do testemunho que a originou,
+            gravadas em áudio e vídeo diante de plateia.
           </p>
         </div>
       </section>
@@ -36,61 +36,60 @@ export default function Dvd() {
             </div>
             <div className="dvd-texto">
               <h2 className="titulo rev" style={{ maxWidth: "16ch" }}>
-                Por que casamento?
+                A origem do título
               </h2>
               <p className="texto rev d1" style={{ marginTop: 22 }}>
-                No meu aniversário, um amigo encheu a minha cabeça com a ideia de
-                gravar as músicas junto com os testemunhos. Eu achei impossível,
-                porque não tinha dinheiro para nada. Fui orar justamente para
-                convencer Deus a tirar aquilo da minha cabeça.
+                A ideia de gravar as canções junto com os testemunhos partiu de
+                um amigo, no aniversário de Juninho. Sem recursos para a
+                produção, ele conta que foi orar justamente para abandonar o
+                projeto, e que ouviu o contrário.
               </p>
               <p className="fala rev d2" style={{ marginTop: 30 }}>
                 &ldquo;Eu quero que você faça uma festa de casamento.&rdquo;
               </p>
+              <p className="fala-quem rev d2">
+                O que ele relata ter ouvido em oração
+              </p>
               <p className="texto rev d2" style={{ marginTop: 30 }}>
-                Naquela mesma noite caí por acaso numa pregação sobre as bodas
-                de Caná, a festa onde Jesus transformou água em vinho. O padre
-                falou da vida como a noiva que espera o noivo. Entendi que não ia
-                escapar.
+                Na mesma noite assistiu, por acaso, a uma pregação sobre as
+                bodas de Caná, a festa em que Jesus transformou água em vinho.
+                O título do DVD nasceu dessa coincidência.
               </p>
 
               <h3 className="sub rev">Os cinquenta copos</h3>
               <p className="texto rev d1">
-                Pedi patrocínio para quase quinhentas pessoas, oferecendo
-                divulgar a marca de quem ajudasse. Uma mulher respondeu que
-                dinheiro não dava, mas que podia mandar copos. Chegaram cinquenta
-                copos simples, com a logo do DVD, que eu não conseguiria vender
-                nem por dois reais.
+                Juninho procurou patrocínio junto a cerca de quinhentas pessoas,
+                oferecendo divulgação da marca de quem apoiasse. A única
+                resposta concreta veio de uma mulher que, em vez de dinheiro,
+                enviou cinquenta copos simples com a logomarca do DVD.
               </p>
               <p className="texto rev d1">
-                Ficaram meses parados em cima da mesa da sala. Toda vez que eu
-                passava perto, pensava em jogar fora. Até que pedi um sinal
-                definitivo e, no dia seguinte, o primeiro vídeo que apareceu no
-                meu celular explicava que, entre os israelitas, era o copo que
-                selava a aliança do casamento. Desconfiei que fosse invenção. Fui
-                assistir a um filme sobre Maria e vi a cena: o pai dela passa o
-                vinho num copo para José, e José para Maria, no lugar das
-                alianças.
+                Os copos ficaram meses sobre a mesa da sala. Segundo ele, a
+                virada veio ao descobrir que, entre os israelitas, era o copo
+                que selava a aliança do casamento, e ao reencontrar essa mesma
+                cena num filme sobre Maria, em que o vinho passa de mão em mão
+                no lugar das alianças.
               </p>
 
               <h3 className="sub rev">A gravação</h3>
               <p className="texto rev d1">
-                Um orçamento de vinte mil reais virou quatro mil, para seis
-                músicas em áudio e vídeo. Fiz uma rifa de cinquenta reais e vendi
-                metade. Na semana da gravação eu ainda tentei desmarcar.
+                O orçamento inicial, de vinte mil reais, foi negociado para
+                quatro mil, cobrindo seis músicas em áudio e vídeo. Uma rifa de
+                cinquenta reais ajudou a compor o valor e vendeu metade dos
+                bilhetes. Parte do custo seguia em aberto no dia da gravação.
               </p>
               <p className="texto rev d1">
-                Cheguei no estúdio e encontrei oito degraus na entrada. Quatro
-                homens me carregaram na cadeira de rodas até lá em cima. Trinta
-                pessoas apareceram para assistir, e nenhuma saiu sem chorar. Eu
-                também chorava enquanto cantava, segurando para não aparecer,
-                porque cada música traz a história de volta.
+                O estúdio tinha oito degraus na entrada, e quatro homens
+                carregaram a cadeira de rodas até o andar de cima. Trinta
+                pessoas assistiram. Juninho afirma que ninguém deixou o local
+                sem chorar, e que ele mesmo cantou chorando, porque cada música
+                traz o episódio de volta.
               </p>
               <p className="fala rev d2" style={{ marginTop: 30 }}>
                 &ldquo;Você não depende de você, você depende de mim.&rdquo;
               </p>
               <p className="fala-quem rev d2">
-                O que eu ouvi no pé da escada
+                O que ele relata ter ouvido no pé da escada
               </p>
 
               <div className="botoes rev d3" style={{ marginTop: 40 }}>
@@ -98,7 +97,7 @@ export default function Dvd() {
                   Ouvir o que já saiu
                 </Link>
                 <Link className="btn btn-vazio" href="/contribua">
-                  Ajudar o lançamento
+                  Apoiar o lançamento
                 </Link>
               </div>
             </div>

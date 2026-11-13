@@ -16,11 +16,11 @@ export default function Contribua() {
         <div className="env">
           <p className="rotulo rev">Contribua</p>
           <h1 className="rev d1">
-            Quem ajuda, <em>faz o projeto andar</em>.
+            Como <em>apoiar o projeto</em>
           </h1>
           <p className="texto rev d2">
-            Cada contribuição vira gravação, divulgação e passagem. Qualquer
-            valor ajuda, e tudo que entra é usado no projeto.
+            As contribuições são aplicadas em gravação, divulgação e
+            deslocamento. Qualquer valor ajuda.
           </p>
         </div>
       </section>
@@ -84,8 +84,8 @@ export default function Contribua() {
                 <h4>Empresas e patrocínio</h4>
                 <p>
                   Quem quiser apoiar como patrocinador pode ter a marca no site e
-                  no material do projeto. Me chame pelo contato que a gente
-                  combina.
+                  no material do projeto. O contato para essa conversa está na
+                  página de contato.
                 </p>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Contribua() {
             <p>
               Gravação e mixagem das músicas que ainda não saíram, divulgação na
               internet para a obra chegar em quem precisa ouvir, e o transporte
-              adaptado que me permite sair de casa para cantar.
+              adaptado que viabiliza os deslocamentos para as apresentações.
             </p>
           </div>
         </div>

@@ -18,8 +18,8 @@ export default function Musicas() {
             Primeiro o testemunho. <em>Depois a canção.</em>
           </h1>
           <p className="texto rev d2">
-            São seiscentas e três músicas e contando. Seis eu já gravei, e
-            estas aqui você pode ouvir agora.
+            São seiscentas e três canções compostas e seis gravadas. Estas
+            podem ser ouvidas agora.
           </p>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function Musicas() {
                     </p>
                   ) : (
                     <p className="aguardando">
-                      O testemunho desta música entra aqui assim que eu contar.
+                      O testemunho desta canção será publicado em breve.
                     </p>
                   )}
                   {m.trecho ? (
@@ -73,9 +73,10 @@ export default function Musicas() {
 
           <div className="nota-letras rev">
             <p>
-              As letras completas entram aqui junto com o testemunho de cada
-              canção. Elas são longas de propósito. Música de duas ou três frases
-              repetidas leva só emoção, e emoção sem reflexão não muda ninguém.
+              As letras completas serão publicadas aqui junto com o testemunho
+              de cada canção. São longas por opção: Juninho defende que música de
+              duas ou três frases repetidas leva só à emoção, e que emoção sem
+              reflexão não muda ninguém.
             </p>
           </div>
         </div>

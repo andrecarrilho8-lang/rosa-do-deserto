@@ -18,8 +18,8 @@ export default function Blog() {
             O que está <em>acontecendo</em>.
           </h1>
           <p className="texto rev d2">
-            Lançamento de música, bastidor de gravação, apresentação marcada.
-            O que for novidade eu conto aqui primeiro.
+            Lançamento de música, bastidor de gravação e apresentações
+            confirmadas. As novidades do projeto são publicadas aqui.
           </p>
         </div>
       </section>

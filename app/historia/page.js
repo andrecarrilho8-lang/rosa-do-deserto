@@ -1,59 +1,60 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Minha história | Projeto Rosa do Deserto",
+  title: "A história | Projeto Rosa do Deserto",
   description:
-    "Como uma saudade, um sonho e uma semente de rosa viraram seiscentas e três músicas.",
+    "A origem do Projeto Rosa do Deserto: um luto, um sonho, uma semente e as seiscentas e três canções de Juninho Bergamin.",
 };
 
 const capitulos = [
   {
     n: "I",
-    titulo: "Minha mãe",
+    titulo: "A perda",
     texto:
-      "Ela morreu em setembro de 2021, de uma semana para outra. No último ano eu era quem cuidava dela, lembrava dos remédios, segurava a rotina. Desde novembro daquele ano eu moro sozinho.",
+      "A mãe de Juninho morreu em setembro de 2021, de uma semana para outra. No último ano de vida dela, era ele quem cuidava da rotina e dos remédios. Desde novembro daquele ano mora sozinho.",
   },
   {
     n: "II",
     titulo: "A promessa",
     texto:
-      "Um ano depois, numa adoração de madrugada, perguntei o que eu ia fazer da minha vida. Ouvi que Deus traria alguém que eu já conhecia e de quem eu jamais desconfiaria. Achei que estava viajando e fui dormir.",
+      "Um ano depois, numa adoração de madrugada, ele perguntou o que faria da vida. Conta ter ouvido que Deus traria à sua vida alguém que ele já conhecia e de quem jamais desconfiaria.",
   },
   {
     n: "III",
     titulo: "O sonho da rosa",
     texto:
-      "Dois dias depois sonhei com a minha mãe num canteiro de rosas. Ela colheu uma flor, entregou a Nossa Senhora, e Nossa Senhora veio correndo e pôs a rosa na minha mão. Acordei com aquela flor na cabeça, uma flor que eu nunca tinha visto.",
+      "Dois dias depois sonhou com a mãe num canteiro de rosas. Ela colheu uma flor e entregou a Nossa Senhora, que a colocou na mão dele. Era uma flor que ele nunca tinha visto.",
   },
   {
     n: "IV",
     titulo: "O reencontro",
     texto:
-      "Uma semana depois reencontrei no Instagram uma amiga de vinte anos atrás, ex-namorada de um amigo meu. Ela estava morando fora, recém-separada, depois de perder três filhos antes de eles nascerem.",
+      "Na semana seguinte reencontrou pelas redes uma amiga de vinte anos atrás, ex-namorada de um amigo próximo. Ela morava fora, estava recém-separada e havia perdido três filhos antes de eles nascerem.",
   },
   {
     n: "V",
-    titulo: "A pergunta no chuveiro",
+    titulo: "A pergunta",
     texto:
-      "Eu não soube o que dizer para ela. Pedi licença, fui tomar banho e comecei a orar. Foi ali que veio a pergunta que me derrubou, porque os médicos tinham mandado abortar para salvar a vida da minha mãe, e meu pai pediu para tentarem salvar os dois.",
+      "Sem saber o que responder a ela, foi orar. Lembrou então de um episódio da própria família: os médicos indicaram o aborto para salvar a vida da mãe dele, e o pai pediu que tentassem salvar os dois.",
+    fala: "Qual é a sua diferença para as crianças dela?",
   },
   {
     n: "VI",
     titulo: "Saudade",
     texto:
-      "Saí do chuveiro e escrevi a letra inteira de uma vez. Chamei o amigo que faz as melodias comigo. Quando terminamos de cantar pela primeira vez, nós dois estávamos chorando, e a diarista também. Ali eu prometi vinte músicas para ela.",
+      "A letra saiu inteira de uma vez. Ele chamou o parceiro de Recife que faz as melodias e, na primeira vez que cantaram, os dois choraram. Ali prometeu vinte canções para aquela amiga.",
   },
   {
     n: "VII",
     titulo: "A semente",
     texto:
-      "Quis mandar sementes de rosa, porque flor cortada não aguentaria a viagem até lá. Procurei na internet e o quarto resultado era semente de rosa do deserto. Abri a foto e era igualzinha à flor do sonho.",
+      "Quis enviar sementes de rosa, porque flor cortada não resistiria à viagem. Ao procurar na internet, o quarto resultado era semente de rosa do deserto. A foto era igual à flor do sonho.",
   },
   {
     n: "VIII",
     titulo: "O caminho da água",
     texto:
-      "Depois fui pesquisar o que a planta faz. A rosa do deserto nasce na areia e mostra onde tem água. E no deserto, água é vida. Foi aí que eu entendi o nome e parei de discutir.",
+      "Depois veio a descoberta que deu nome ao projeto: a rosa do deserto nasce na areia e indica onde há água. No deserto, água é vida. As vinte canções prometidas hoje são seiscentas e três.",
   },
 ];
 
@@ -64,14 +65,14 @@ export default function Historia() {
         <img className="fundo" src="/img/pb.webp" alt="" />
         <div className="veu" />
         <div className="env">
-          <p className="rotulo rev">Minha história</p>
+          <p className="rotulo rev">A história</p>
           <h1 className="rev d1">
-            Começou com uma <em>saudade</em>.
+            Como o projeto <em>começou</em>
           </h1>
           <p className="texto rev d2">
-            Eu não planejei nada disso. Antes da Rosa do Deserto eu devia ter
-            visto rosa na vida umas três vezes, nunca tinha dado uma flor para
-            ninguém e não ligava para flor nenhuma.
+            Nada disso foi planejado. Antes da Rosa do Deserto, Juninho diz que
+            tinha visto rosa na vida umas três vezes e que nunca havia dado uma
+            flor a ninguém.
           </p>
         </div>
       </section>
@@ -85,6 +86,12 @@ export default function Historia() {
                 <div>
                   <h3>{c.titulo}</h3>
                   <p>{c.texto}</p>
+                  {c.fala ? (
+                    <blockquote className="etapa-fala">
+                      &ldquo;{c.fala}&rdquo;
+                      <cite>Juninho Bergamin</cite>
+                    </blockquote>
+                  ) : null}
                 </div>
               </article>
             ))}
@@ -99,18 +106,13 @@ export default function Historia() {
             Quem é a <em>Rosa do Deserto</em>?
           </h2>
           <p className="texto rev d2">
-            Todo mundo me pergunta. Eu não vou dizer, e saber não mudaria nada,
-            porque a história nunca foi sobre quem ela é.
+            A identidade da amiga que deu origem ao projeto nunca foi revelada,
+            e não será. Ela ouve cada canção antes do público.
           </p>
           <p className="fala rev d3" style={{ marginTop: 32 }}>
             &ldquo;Foi só um jeito de Deus me mostrar o conceito.&rdquo;
           </p>
-          <p className="texto rev d4" style={{ marginTop: 32 }}>
-            Ela ouve todas as músicas antes de qualquer pessoa. Eu acho que quem
-            tenta cuidar de todo mundo acaba não cuidando de ninguém, e que quem
-            cuida de uma rosa só descobre depois que o passarinho leva a semente
-            para longe.
-          </p>
+          <p className="fala-quem rev d3">Juninho Bergamin</p>
           <div
             className="botoes rev d4"
             style={{ marginTop: 36, justifyContent: "center" }}
