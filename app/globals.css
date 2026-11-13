@@ -637,3 +637,10 @@ body.travado{overflow:hidden}
 .contribua-home::after,.ep-sec::after{content:"";position:absolute;top:0;left:12%;right:12%;
   height:1px;z-index:2;pointer-events:none;
   background:linear-gradient(90deg,transparent,rgba(232,205,178,.22),transparent)}
+
+/* fotos de fundo deixam de terminar em linha reta: esmaecem nas pontas */
+.agenda-fundo,.capa .fundo,.citacao .textura{
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 16%,#000 76%,transparent 100%);
+  mask-image:linear-gradient(to bottom,transparent 0%,#000 16%,#000 76%,transparent 100%)}
+.hero-foto{-webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 72%,transparent 100%)}
