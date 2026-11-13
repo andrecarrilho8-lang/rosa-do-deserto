@@ -5,7 +5,7 @@ import { pedidoDeItem, temWhats } from "@/lib/whats";
 export const metadata = {
   title: "Lojinha | Projeto Rosa do Deserto",
   description:
-    "Os itens do Projeto Rosa do Deserto ficam expostos aqui e o pedido é feito pelo WhatsApp.",
+    "Os itens do Projeto Rosa do Deserto. Escolha o seu e faça o pedido pelo WhatsApp, direto com o projeto.",
 };
 
 const passos = [
@@ -13,7 +13,7 @@ const passos = [
     n: "01",
     titulo: "Escolha o item",
     texto:
-      "Cada item traz a descrição e o valor. Não existe carrinho nem cadastro.",
+      "Você vê a descrição e o valor de cada um. Não existe carrinho nem cadastro.",
   },
   {
     n: "02",
@@ -41,10 +41,10 @@ export default function Loja() {
         <div className="env">
           <p className="rotulo rev">Lojinha</p>
           <h1 className="rev d1">
-            Os itens do <em>projeto</em>
+            Leve o projeto para <em>casa</em>
           </h1>
           <p className="texto rev d2">
-            Aqui os itens ficam expostos e o pedido é feito pelo WhatsApp, numa
+            Escolha o seu item, chame no WhatsApp e combine o pedido numa
             conversa direta com o projeto.
           </p>
         </div>
@@ -116,9 +116,9 @@ export default function Loja() {
               <img src="/img/simbolo.svg" alt="" />
               <h2 className="titulo">Os primeiros itens estão em produção.</h2>
               <p className="texto">
-                A lojinha abre assim que a produção dos itens ficar pronta.
-                Quando isso acontecer, cada item aparece nesta página com foto,
-                descrição e valor, e o pedido sai por uma conversa no WhatsApp.
+                Assim que ficarem prontos, eles aparecem aqui e você pede o seu
+                pelo WhatsApp, numa conversa direta com o projeto. Para ser
+                avisado na hora em que a lojinha abrir, mande uma mensagem.
               </p>
               <div className="botoes" style={{ marginTop: 30 }}>
                 <Link className="btn btn-cheio" href="/contato">

@@ -279,10 +279,9 @@ export default function Home() {
                 A lojinha do projeto
               </h2>
               <p className="texto rev d2" style={{ marginTop: 20 }}>
-                Os primeiros itens estão em produção. Quando ficarem prontos,
-                aparecem na lojinha com foto, descrição e valor. O pedido é
-                feito por uma conversa no WhatsApp, sem carrinho e sem
-                cadastro.
+                Os primeiros itens estão em produção. Assim que ficarem
+                prontos, você vai poder escolher o seu e fazer o pedido por uma
+                conversa no WhatsApp, direto com o projeto.
               </p>
               <div className="botoes rev d3" style={{ marginTop: 28 }}>
                 <Link className="btn btn-vazio" href="/loja">
